@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.success, .error{
+    font-size: 12px;
+    text-align: center;
+    margin: 3px;
+}
+    .success{
+        color:green;
+    }
+    .error{
+        color: red;
+    }
+
+section{
+    margin: 10px auto 0;
+    width: 500px;
+    height: 550px;
+    padding: 15px;
+    background: rgba(128, 128, 128, 0.411);
+}
+    h2{
+        margin: 15px 0;
+    }
+    form label{
+        width: 150px;
+        display: inline-block;
+        margin: 6px;
+
+    }
+    form input{
+        height: 25px;
+        width: 250px;
+    }
+    .btn-register, .btn-login{
+        cursor: pointer;
+        margin: 25px 0 35px 20%;
+        border: 2px solid black;
+        border-radius: 5px;
+        color: white;
+        font-size: 18px;
+    }
+    .btn-register{
+        background: orange;
+    }
+    .btn-login{
+        background: green;
+    }

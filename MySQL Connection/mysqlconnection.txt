@@ -1,0 +1,21 @@
+ Warning: mysqli::mysqli(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in C:\wamp64\www\village88\php with my sql\MySQL Connection\connection.php on line 7
+
+Warning: var_dump(): Property access is not allowed yet in C:\wamp64\www\village88\php with my sql\MySQL Connection\connection.php on line 8
+
+ Warning: var_dump(): Couldn't fetch mysqli in C:\wamp64\www\village88\php with my sql\MySQL Connection\connection.php on line 8
+
+-to fix this you need to set DB_USER as 'root'.
+
+ Warning: mysqli::mysqli(): (HY000/1049): Unknown database 'mysqli' in C:\wamp64\www\village88\php with my sql\MySQL Connection\connection.php on line 7
+
+-make sure to add the correct db name in DB_DATABASE.
+
+<?php
+define('DB_HOST', 'localhost');
+define('DB_USER', 'root');
+define('DB_PASS', ''); //set DB_PASS as 'root' if you're using mac
+define('DB_DATABASE', 'mysql'); //make sure to set your database
+//connect to database host
+$connection = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_DATABASE);
+var_dump($connection);
+?>
